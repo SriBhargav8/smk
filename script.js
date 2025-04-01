@@ -241,26 +241,30 @@ document.addEventListener("DOMContentLoaded", () => {
   function submitToGoogleSheets(data) {
     return new Promise((resolve, reject) => {
       // Google Apps Script Web App URL - replace with your actual URL
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbx0tm1jC9mdkTfdgJjR6Rhzsx45RWNSLdP9q2Lxkk5laQDp4-1J_QF9Lj20y3l8Gub1/exec"
+      const scriptURL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
 
-      // Create form data instead of JSON for better CORS compatibility
-      const formData = new FormData()
-      Object.keys(data).forEach((key) => {
-        formData.append(key, data[key])
-      })
+      // Convert data to JSON for proper CORS handling
+      const jsonData = JSON.stringify(data)
 
-      // Try to submit with fetch using no-cors mode to avoid CORS errors
+      // Use fetch with proper CORS settings
       fetch(scriptURL, {
         method: "POST",
-        body: formData,
-        mode: "no-cors", // This prevents CORS errors but makes response unreadable
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: jsonData,
+        // Don't use no-cors mode as it prevents reading the response
       })
-        .then(() => {
-          // Since we're using no-cors, we can't actually check the response
-          // We'll just assume it worked
-          console.log("Data submitted successfully (assumed)")
-          resolve()
+        .then((response) => {
+          if (response.ok) {
+            return response.json()
+          } else {
+            throw new Error("Network response was not ok")
+          }
+        })
+        .then((data) => {
+          console.log("Data submitted successfully:", data)
+          resolve(data)
         })
         .catch((error) => {
           console.error("Error:", error)
