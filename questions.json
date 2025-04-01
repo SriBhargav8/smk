@@ -1,0 +1,103 @@
+[
+  {
+    "question": "What is the most effective way to improve productivity?",
+    "options": [
+      "Multitasking on several projects at once",
+      "Working longer hours",
+      "Using the Pomodoro Technique",
+      "Eliminating distractions and focusing on one task"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "question": "Which of these is considered a key principle of effective leadership?",
+    "options": [
+      "Micromanaging team members",
+      "Leading by example",
+      "Avoiding difficult conversations",
+      "Making all decisions independently"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "question": "What is the most important factor in building a successful business?",
+    "options": [
+      "Having a large marketing budget",
+      "Solving a real problem for customers",
+      "Securing venture capital funding",
+      "Having a prestigious office location"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "question": "Which time management strategy is most effective for long-term productivity?",
+    "options": [
+      "Working on urgent tasks first",
+      "Prioritizing based on importance rather than urgency",
+      "Handling emails as they arrive",
+      "Taking on multiple projects simultaneously"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "question": "What is the key to effective communication in a team?",
+    "options": [
+      "Speaking more than listening",
+      "Using technical jargon",
+      "Active listening and clear messaging",
+      "Communicating only through formal channels"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "question": "Which approach is most effective for professional development?",
+    "options": [
+      "Focusing only on your current job responsibilities",
+      "Learning only technical skills related to your field",
+      "Continuous learning across multiple disciplines",
+      "Waiting for your employer to provide training opportunities"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "question": "What is the most important skill for adapting to workplace changes?",
+    "options": [
+      "Technical expertise",
+      "Flexibility and resilience",
+      "Political savviness",
+      "Seniority in the organization"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "question": "Which strategy best helps maintain work-life balance?",
+    "options": [
+      "Working longer hours to finish everything",
+      "Setting clear boundaries and priorities",
+      "Checking emails during personal time",
+      "Taking on additional responsibilities"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "question": "What is the most effective approach to giving feedback?",
+    "options": [
+      "Waiting for annual performance reviews",
+      "Focusing only on areas for improvement",
+      "Being specific, timely, and constructive",
+      "Avoiding negative feedback completely"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "question": "Which is the most important factor in building a successful team?",
+    "options": [
+      "Having members with identical skills",
+      "Creating psychological safety and trust",
+      "Implementing strict rules and procedures",
+      "Hiring only experienced professionals"
+    ],
+    "correctIndex": 1
+  }
+]
+
