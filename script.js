@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return new Promise((resolve, reject) => {
       // Google Apps Script Web App URL - replace with your actual URL
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyC0ps6JWArTK-6ZNrvzm5qe3_bgVAMUrNDO1k6UThHNeWXdP0PV30H--U9mD3SC9q0RQ/exec"
+        "https://script.google.com/macros/s/AKfycbx0tm1jC9mdkTfdgJjR6Rhzsx45RWNSLdP9q2Lxkk5laQDp4-1J_QF9Lj20y3l8Gub1/exec"
 
       // Create form data instead of JSON for better CORS compatibility
       const formData = new FormData()
